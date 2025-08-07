@@ -83,24 +83,24 @@ def find_renob(target: str, start: Optional[Path]=None):
 #===================== FUNÇÃO PRINCIPAL DE MERGE ==============================#
 #==============================================================================#
 def merge_csvs(new_csv: pd.DataFrame, master_path:Path) -> dict:
-    data_path   = "public/data"
-    renob_data  = find_renob(data_path)
-    master_df   = load_create_master(master_path)         # carrega o Master.csv
-    new_df      = new_csv                                 # Leitura do arquivo .csv selecionado
     
-    if Path(master_path).stem == 'db_sisvan': 
-            data_name   = "db_final" 
-    else:   data_name   = "db_region"
-
+    master_df   = load_create_master(master_path)         # carrega o Master.csv
+    new_df      = new_csv.copy()                                 # Leitura do arquivo .csv selecionado
+    
     #cria conjuntos de hashes para comparação (linha inteira como string)
     existing_hashes = set()
     if not master_df.empty:
-        existing_hashes = set(
-            master_df.apply(
-                lambda row: hash_line(','.join(map(str,row.tolist()))),axis=1
-            )
-        )
+        # descarta colunas que não existam em master_df e reordena
+        new_df = new_df.reindex(columns=master_df.columns, fill_value='')
+    else:
+        # se master está vazio, podemos criar com as mesmas colunas
+        new_df = new_df.reindex(columns=new_df.columns, fill_value='')
     
+    existing_hashes = set(
+        master_df
+        .apply(lambda row: hash_line(','.join(map(str, row.tolist()))), axis=1)
+    ) if not master_df.empty else set()
+
     #itera sobre cada linha de new_df: string única -> hash -> compara 
     added = []
     for _, row in new_df.iterrows():
@@ -118,7 +118,6 @@ def merge_csvs(new_csv: pd.DataFrame, master_path:Path) -> dict:
         else:
             updated = pd.concat([master_df,added_df], ignore_index=True)
         updated.to_csv(master_path, index=False)
-        # updated.to_csv(f'{renob_data}/{data_name}.csv', index=False) # comentando para teste
     else:
         updated = master_df
     return{                                             # retorna dicionario com resumo do resultado 
