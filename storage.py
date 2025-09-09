@@ -1,5 +1,6 @@
 import json, os, sys, datetime, shutil
 from pathlib import Path
+from typing import Optional
 
 def resource_path(relative_path: str) -> str:
     """
@@ -32,7 +33,6 @@ def load_config(config_file: str = "config.json") -> dict:
     cfg["data_dir"]         = app_dir           / cfg["data_dir"]
     cfg["backup_dir"]       = app_dir           / cfg["backup_dir"]
     cfg["sisvan_path"]      = cfg["data_dir"]   / cfg["sisvan_path"]
-    cfg["regional_path"]    = cfg["data_dir"]   / cfg["regional_path"]
     cfg["log_path"]         = cfg["backup_dir"] / cfg["log_path"]
     return cfg
 
@@ -72,7 +72,7 @@ def rotate_backup(original:Path, backup_dir:Path, keep: int=3, suffix: str = ".c
         except Exception as e:
              print(f"Falha ao remover backup antigo {oldest}: {e}")
 
-def backup(original:Path, backup_dir: Path, date_format: str = "%d%m%Y-%H%M%S"):
+def backup(original:Path, backup_dir: Path, date_format: str = cfg['date_format']):
     """
     Gera um backup do `original` em `backup_dir`, mantendo o histórico limitado por rotate_backups.
     """
@@ -116,3 +116,5 @@ def log_merge_file(input_file:str, master_file:str, added_count:int, total_after
         line = f'{timestamp},"{input_file}","{master_file}", {added_count}, {total_after}\n'
         with open(LOG_FILE, "a", encoding="utf-8") as f:
             f.write(line)
+
+

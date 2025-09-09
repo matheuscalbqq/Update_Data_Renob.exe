@@ -1,45 +1,86 @@
-import shutil
+import shutil, os, re
 import pandas as pd
-from typing             import Optional
 from pathlib            import Path
-from primary_function   import merge_csvs, treatment, find_renob
+from primary_function   import merge_csvs, treatment, find_renob, UserCancelError
 from storage            import load_config, log_merge_file, backup, count_lines, resource_path
-from PySide6.QtCore     import QPoint, Qt, QSize, QEvent, QPropertyAnimation, QThread, Signal
 from PySide6.QtGui      import QIcon, QCursor
+from PySide6.QtCore     import (
+    QPoint, Qt, QSize, QEvent, QPropertyAnimation, QThread, 
+    Signal
+    )
 from PySide6.QtWidgets  import (
     QMainWindow,    QPushButton,    QVBoxLayout,    QHBoxLayout,
     QWidget,        QProgressBar,   QFileDialog,    QMessageBox, 
-    QLineEdit,      QRadioButton,   QButtonGroup,  
-    QGridLayout,    QToolButton,    QTextEdit,      QLabel
-)
+    QLineEdit,      QRadioButton,   QButtonGroup,   QLabel,
+    QGridLayout,    QToolButton,    QTextEdit,      QDialog,
+    QDialogButtonBox, QSpinBox
+    )
 
 
 # recupera os caminhos para o arquivo master/pasta backup do config.json
 cfg             = load_config()
 SISVAN_FILE     = cfg["sisvan_path"]
-REGIONAL_FILE   = cfg["regional_path"]
 BACKUP_DIR      = cfg["backup_dir"]
 BACKUP_DIR      .mkdir(exist_ok=True)
 DATA_DIR        = cfg["data_dir"]
 DATA_DIR        .mkdir(exist_ok=True)
 
 
+class PhaseDialog(QDialog):
+    def __init__(self, parent, filename:str):
+        super().__init__(parent)
+        
+        self.setWindowTitle("Selecione a fase da vida")
+        
+        layout  = QVBoxLayout(self)
+        layout.setContentsMargins(20, 20, 20, 20)
+        layout.setSpacing(12) 
+
+        layout.addWidget(QLabel(f"Não foi encontrada a fase da vida.\n Arquivo: {filename}.\n\n Por favor, informe antes de prosseguir:"))
+        
+        opts_layout = QVBoxLayout()
+        opts_layout.setSpacing(10)
+        opts_layout.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.button_group = QButtonGroup(self)
+        for phase in ("adolescente","adulto"):
+            rb = QRadioButton(phase, self)
+            self.button_group.addButton(rb)
+            opts_layout.addWidget(rb)
+        self.button_group.buttons()[0].setChecked(True)
+
+        layout.addLayout(opts_layout)
+        layout.addSpacing(20)
+
+        box = QDialogButtonBox(QDialogButtonBox.StandardButton.Ok | QDialogButtonBox.StandardButton.Cancel, self)
+        box.accepted.connect(self.accept)
+        box.rejected.connect(self.reject)
+        layout.addWidget(box)
+
+    def selected(self) -> str:
+        btn = self.button_group.checkedButton()
+
+        return btn.text() if btn else ""
+
 class Worker(QThread):
     # sinais: emite um int (0–100) para progresso, e notifica fim de processamento
-    progresso = Signal(int)
-    finished  = Signal(bool)  # bool indica se cancelou (True) ou não (False)
-    log       = Signal(str)
+    progresso       = Signal(int)
+    finished        = Signal(bool)  # bool indica se cancelou (True) ou não (False)
+    log             = Signal(str)
 
-    def __init__(self, paths, master, backup_dir):
+    def __init__(self, paths, master, backup_dir, file_phase_map):
         super().__init__()
-        self.paths      = paths
-        self.master     = master
-        self.backup_dir = backup_dir
-        self.cancel_requested = False
+        self.paths              = paths
+        self.master             = master
+        self.backup_dir         = backup_dir
+        self.file_phase_map     = file_phase_map
+        self.cancel_requested   = False
 
         self.total          = 0
         self.added          = 0
         self.total_lines    = 0
+        self.updated_count  = 0
+    
 
     def run(self):
         # 1) Inicialização → 10%
@@ -48,28 +89,53 @@ class Worker(QThread):
             self.total_lines = count_lines(self.master)
         else:
             self.total_lines = 0
-        self.progresso.emit(10)
 
         # 2) Backup → 20%
         if self.master.exists() and not self.cancel_requested:
             self.log.emit("💾 Fazendo backup...")
             backup(self.master, self.backup_dir)
-        self.progresso.emit(20)
+        self.progresso.emit(10)
 
-        # 3) Processa cada CSV → de 20% a 90%
+        # 3) Processa cada CSV → de 10% a 100%
+        
+        total_files = len(self.paths)
         
         for idx, file_path in enumerate(self.paths, start=1):
             if self.cancel_requested:
                 break
             
+            bloco       = (100-10)/total_files
+            inicio      = 10 + (idx-1)*bloco
             self.log.emit(f"({idx}/{self.total}) Processando: {file_path}")
-            frac = (idx - 1) / self.total
-            pct  = int(20 + frac*(90-20))
-            self.progresso.emit(pct)
+            self.progresso.emit(int(inicio))
+
+            def progresso_arquivo(pct: int, inicio=inicio, bloco=bloco):
+                """
+                    pct vem de 0 a 100 do merge_csvs.
+                    Converte para o span [inicio, inicio+bloco].
+                """
+                overall = inicio + (pct / 100) * bloco
+                self.progresso.emit(int(overall))
+            
+            # fase da vida
+            fase    = self.file_phase_map.get(str(file_path),"desconhecido")
 
             # treatment + merge + log
-            new_csv = treatment(Path(file_path), self.master)
-            result = merge_csvs(pd.DataFrame(new_csv), self.master)
+            try:
+                new_df = treatment(Path(file_path), str(fase))
+                result = merge_csvs(pd.DataFrame(new_df), self.master, progress_callback=progresso_arquivo)
+
+            except UserCancelError:
+                self.log.emit("🚫 Processo cancelado pelo usuário")
+                self.cancel_requested = True
+                break
+            except Exception as e:
+                import traceback
+                tb = traceback.format_exc()
+                self.log.emit(f"❌ Erro inesperado no merge: {e}\n{tb}")
+                self.cancel_requested = True
+                break
+
             log_merge_file(
                 input_file   = file_path,
                 master_file  = self.master,
@@ -77,6 +143,7 @@ class Worker(QThread):
                 total_after  = result["total_after"]
             )
             self.added += result["added_count"]
+            self.updated_count += result.get("updated_count", 0)
         self.total_lines += self.added
         # 4) Final → 100%
         if not self.cancel_requested:
@@ -84,13 +151,15 @@ class Worker(QThread):
 
         # 5) emite finished com flag se cancelou
         self.finished.emit(self.cancel_requested)
-
-
+ 
 
 class MainWindow(QMainWindow):
 
     def __init__(self):
         super().__init__()                  # cria janela principal herdando QMainWindow
+        self._override_phase: str | None = None
+        self._apply_to_all:   bool      = False
+        self.worker: Worker | None = None
 
         self.paths = []
         self.last_backup: Path | None = None
@@ -107,20 +176,7 @@ class MainWindow(QMainWindow):
 
         self._button_w = 75
         self._button_h = 25
-        
-
-        self.rb_op1 = QRadioButton("Sisvan Database")
-        self.rb_op1.setFixedHeight(30)
-        self.rb_op1.setChecked(True)
-
-        self.rb_op2 = QRadioButton("Regional Database")
-        self.rb_op2.setFixedHeight(30)
-
-        group = QButtonGroup(self)
-        group.setExclusive(True)
-        for rb in (self.rb_op1,self.rb_op2):
-            group.addButton(rb)
-        
+          
         self.line_edit = QLineEdit()
         self.line_edit .setFixedHeight(self._button_h - 2)
         self.line_edit.textChanged.connect(self.on_line_edit_changed)
@@ -206,9 +262,7 @@ class MainWindow(QMainWindow):
                 """
             )
 
-        top_layout = QHBoxLayout()                                        # Layout Horizontal para botões
-        top_layout.addWidget(self.rb_op1)
-        top_layout.addWidget(self.rb_op2)
+        top_layout = QHBoxLayout()
         top_layout.addStretch()
         top_layout.addWidget(self.progress)
         top_layout.addStretch()
@@ -259,16 +313,12 @@ class MainWindow(QMainWindow):
             """
         )
 
-    
-    # SISVAN OU REGIONAL?
     def get_current_master(self) -> Path:
         """
         Retorna o arquivo master em uso, conforme o rádio selecionado.
         """
-        if self.rb_op1.isChecked():
-            return SISVAN_FILE
-        else:
-            return REGIONAL_FILE
+        return SISVAN_FILE
+
         
     def on_help_clicked(self):
         """
@@ -277,12 +327,11 @@ class MainWindow(QMainWindow):
         """
         texto = (
                     "COMO USAR:\n"
-                    "1. Selecione qual database deseja atualizar (Sisvan ou Regional).\n"
-                    "2. Clique em 'Browser' e selecione CSV(s) ou escreva o(s) caminho(s) na caixa de texto.\n"
-                    "3. Clique em 'Iniciar' para atualizar a database.\n"
-                    "4. 'Detalhes' mostra em qual parte do processo está.\n"
-                    "5. Para cancelar durante o processo, use 'Cancelar'.\n"
-                    "6. Caso precise restaurar para a última versão, use 'Restaurar'.\n\n"
+                    "1. Clique em 'Browser' e selecione CSV(s) ou escreva o(s) caminho(s) na caixa de texto.\n"
+                    "2. Clique em 'Iniciar' para atualizar a database.\n"
+                    "3. 'Detalhes' mostra em qual parte do processo está.\n"
+                    "4. Para cancelar durante o processo, use 'Cancelar'.\n"
+                    "5. Caso precise restaurar para a última versão, use 'Restaurar'.\n\n"
                     "COMO FUNCIONA?\n"
                     "1. Lê os arquivos\n"
                     "2. Os comparam com a database atual\n"
@@ -354,13 +403,13 @@ class MainWindow(QMainWindow):
             return                                                            # fechar a janela de seleção.
         
         self.paths  = paths
-        db_name     = self.get_current_master().name
+        #db_name     = self.get_current_master().name
 
         self.details_text.clear()
         self.line_edit.setText("; ".join(paths))                              # escreve os caminhos na caixa de texto
-        self.details_text.append(f"- {len(paths)} arquivo(s) selecionado(s) para {db_name}:")
-        for p in paths:
-            self.details_text.append(f"  • {p}")
+        #self.details_text.append(f"- {len(paths)} arquivo(s) selecionado(s) para {db_name}:")
+        #for p in paths:
+        #    self.details_text.append(f"  • {p}")
         self.progress.setValue(0)                                             # Atualiza a barra de progresso em 10%
         self.button_process.setEnabled(True)
     
@@ -401,18 +450,49 @@ class MainWindow(QMainWindow):
     def on_start_clicked(self):
         if not self.paths:
             return
-        # cria e configura o worker
+        
+        file_phase_map: dict[str,str] = {}
+        file_ano_map: dict[str,int] = {}
+        override_phase  = None
+        apply_to_all    = False
         master      = self.get_current_master()
         db_name     = master.stem
-        self.worker = Worker(self.paths, master, BACKUP_DIR)
+        
+        if db_name == 'db_sisvan':
+            for p in self.paths:
+                name = Path(p).name.lower()
+                if 'adolescente' in name:
+                    fase = 'adolescente'
+                elif 'adulto' in name:
+                    fase = 'adulto'
+                else:
+                    if apply_to_all:
+                        fase = override_phase
+                    else:
+                        dialog = PhaseDialog(self, Path(p).name)
+                        if dialog.exec() != QDialog.DialogCode.Accepted:
+                            QMessageBox.information(self, "Cancelado", "Processo cancelado pelo usuário.")
+                            return
+                        fase = dialog.selected()
+
+                        resp = QMessageBox.question(self,"Aplicar a Todos?",
+                                                    "Aplicar esta fase da vida aos próximos sem correspondência?",
+                                                    QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No)
+                        if resp == QMessageBox.StandardButton.Yes:
+                            apply_to_all    = True
+                            override_phase  = fase
+                file_phase_map[p] = str(fase) 
+                
+        # cria e configura o worker
+        self.worker = Worker(self.paths, master, BACKUP_DIR, file_phase_map)
+        
+        
 
         # preenche UI antes de iniciar
         self.progress.show()
         self.button_process.setEnabled(False)
         self.button_restore.setEnabled(False)
         self.button_select.setEnabled(False)
-        self.rb_op1.setEnabled(False)
-        self.rb_op2.setEnabled(False)
         self.button_cancel.setEnabled(True)
         self.details_text.append(f'- Atualizando: {db_name}')
         self.details_text.append(f"- Iniciando o processamento dos arquivos...")
@@ -447,17 +527,46 @@ class MainWindow(QMainWindow):
         worker = self.worker
         assert worker is not None, "Worker deveria existir quando finished for chamado"
         if canceled:
-            # restauramos o backup
-            if self.worker and self.worker.master.exists():
-                shutil.copy2(self.worker.master, self.worker.master)
-            self.details_text.append("🚫 Processo cancelado. Backup restaurado.")
+            master = worker.master
+            # padrão: master_DDMMYYYYThhmmss.csv
+            pattern = f"{master.stem}_*{master.suffix}"
+            backups = sorted(
+                BACKUP_DIR.glob(pattern),
+                key=lambda p: p.name
+            )
+            if backups:
+                latest = backups[-1]
+                shutil.copy2(latest, master)
+                self.details_text.append(
+                    f"🚫 Processo cancelado. Backup restaurado ({latest.name})."
+                )
+            else:
+                self.details_text.append(
+                    "🚫 Processo cancelado. Não encontrei nenhum backup para restaurar."
+                )
+            self.button_cancel.setEnabled(False)
+            self.button_restore.setEnabled(True)
+            self.button_process.setEnabled(True)
+            self.button_select.setEnabled(True)
+            # opcional: esconder barra de progresso
+            self.progress.hide()
+            return   
         else:
+
             self.details_text.append(
                 f"✔️ Concluído(s) {worker.total} merge(s).\n"
                 f"- {worker.added} linha(s) adicionada(s).\n"
                 f"- Total final: {worker.total_lines} linha(s)."
             )
+
+            if worker.updated_count > 0:
+                self.details_text.append(
+                    f"- {worker.updated_count} linha(s) existente(s) atualizada(s)."
+                )
+
+
             renob_data  = find_renob("public/data")
+
             if renob_data is None:
                 QMessageBox.warning(
                     self,
@@ -489,8 +598,6 @@ class MainWindow(QMainWindow):
         self.button_restore.setEnabled(True)
         self.button_process.setEnabled(True)
         self.button_select.setEnabled(True)
-        self.rb_op1.setEnabled(True)
-        self.rb_op2.setEnabled(True)
 
     
     def restore_last_backup(self):
@@ -528,3 +635,5 @@ class MainWindow(QMainWindow):
         # opcional: atualizar UI
         self.progress.setValue(0)
         self.details_text.append(f"{master.name} restaurado para: {latest.name}")
+
+    

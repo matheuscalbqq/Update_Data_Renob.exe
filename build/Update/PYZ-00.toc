@@ -1,6 +1,310 @@
 ('E:\\GitHubRepositories\\renob-pythonSide\\Raw '
  'data\\programa.exe\\build\\Update\\PYZ-00.pyz',
- [('PySide6',
+ [('PIL',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\__init__.py',
+   'PYMODULE'),
+  ('PIL.AvifImagePlugin',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\AvifImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.BlpImagePlugin',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\BlpImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.BmpImagePlugin',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\BmpImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.BufrStubImagePlugin',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\BufrStubImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.CurImagePlugin',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\CurImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.DcxImagePlugin',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\DcxImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.DdsImagePlugin',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\DdsImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.EpsImagePlugin',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\EpsImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.ExifTags',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\ExifTags.py',
+   'PYMODULE'),
+  ('PIL.FitsImagePlugin',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\FitsImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.FliImagePlugin',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\FliImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.FpxImagePlugin',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\FpxImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.FtexImagePlugin',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\FtexImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.GbrImagePlugin',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\GbrImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.GifImagePlugin',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\GifImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.GimpGradientFile',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\GimpGradientFile.py',
+   'PYMODULE'),
+  ('PIL.GimpPaletteFile',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\GimpPaletteFile.py',
+   'PYMODULE'),
+  ('PIL.GribStubImagePlugin',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\GribStubImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.Hdf5StubImagePlugin',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\Hdf5StubImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.IcnsImagePlugin',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\IcnsImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.IcoImagePlugin',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\IcoImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.ImImagePlugin',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\ImImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.Image',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\Image.py',
+   'PYMODULE'),
+  ('PIL.ImageChops',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\ImageChops.py',
+   'PYMODULE'),
+  ('PIL.ImageCms',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\ImageCms.py',
+   'PYMODULE'),
+  ('PIL.ImageColor',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\ImageColor.py',
+   'PYMODULE'),
+  ('PIL.ImageFile',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\ImageFile.py',
+   'PYMODULE'),
+  ('PIL.ImageFilter',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\ImageFilter.py',
+   'PYMODULE'),
+  ('PIL.ImageMath',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\ImageMath.py',
+   'PYMODULE'),
+  ('PIL.ImageMode',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\ImageMode.py',
+   'PYMODULE'),
+  ('PIL.ImageOps',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\ImageOps.py',
+   'PYMODULE'),
+  ('PIL.ImagePalette',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\ImagePalette.py',
+   'PYMODULE'),
+  ('PIL.ImageQt',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\ImageQt.py',
+   'PYMODULE'),
+  ('PIL.ImageSequence',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\ImageSequence.py',
+   'PYMODULE'),
+  ('PIL.ImageShow',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\ImageShow.py',
+   'PYMODULE'),
+  ('PIL.ImageTk',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\ImageTk.py',
+   'PYMODULE'),
+  ('PIL.ImageWin',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\ImageWin.py',
+   'PYMODULE'),
+  ('PIL.ImtImagePlugin',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\ImtImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.IptcImagePlugin',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\IptcImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.Jpeg2KImagePlugin',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\Jpeg2KImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.JpegImagePlugin',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\JpegImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.JpegPresets',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\JpegPresets.py',
+   'PYMODULE'),
+  ('PIL.McIdasImagePlugin',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\McIdasImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.MicImagePlugin',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\MicImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.MpegImagePlugin',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\MpegImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.MpoImagePlugin',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\MpoImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.MspImagePlugin',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\MspImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PaletteFile',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\PaletteFile.py',
+   'PYMODULE'),
+  ('PIL.PalmImagePlugin',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\PalmImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PcdImagePlugin',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\PcdImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PcxImagePlugin',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\PcxImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PdfImagePlugin',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\PdfImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PdfParser',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\PdfParser.py',
+   'PYMODULE'),
+  ('PIL.PixarImagePlugin',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\PixarImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PngImagePlugin',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\PngImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PpmImagePlugin',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\PpmImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PsdImagePlugin',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\PsdImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.QoiImagePlugin',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\QoiImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.SgiImagePlugin',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\SgiImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.SpiderImagePlugin',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\SpiderImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.SunImagePlugin',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\SunImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.TgaImagePlugin',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\TgaImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.TiffImagePlugin',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\TiffImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.TiffTags',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\TiffTags.py',
+   'PYMODULE'),
+  ('PIL.WebPImagePlugin',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\WebPImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.WmfImagePlugin',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\WmfImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.XVThumbImagePlugin',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\XVThumbImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.XbmImagePlugin',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\XbmImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.XpmImagePlugin',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\XpmImagePlugin.py',
+   'PYMODULE'),
+  ('PIL._binary',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\_binary.py',
+   'PYMODULE'),
+  ('PIL._deprecate',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\_deprecate.py',
+   'PYMODULE'),
+  ('PIL._typing',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\_typing.py',
+   'PYMODULE'),
+  ('PIL._util',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\_util.py',
+   'PYMODULE'),
+  ('PIL._version',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\_version.py',
+   'PYMODULE'),
+  ('PIL.features',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PIL\\features.py',
+   'PYMODULE'),
+  ('PySide6',
    'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
    'data\\programa.exe\\programa.exe\\Lib\\site-packages\\PySide6\\__init__.py',
    'PYMODULE'),
@@ -169,6 +473,7 @@
   ('cmd', 'C:\\Python313\\Lib\\cmd.py', 'PYMODULE'),
   ('code', 'C:\\Python313\\Lib\\code.py', 'PYMODULE'),
   ('codeop', 'C:\\Python313\\Lib\\codeop.py', 'PYMODULE'),
+  ('colorsys', 'C:\\Python313\\Lib\\colorsys.py', 'PYMODULE'),
   ('concurrent', 'C:\\Python313\\Lib\\concurrent\\__init__.py', 'PYMODULE'),
   ('concurrent.futures',
    'C:\\Python313\\Lib\\concurrent\\futures\\__init__.py',
@@ -302,6 +607,18 @@
   ('email.policy', 'C:\\Python313\\Lib\\email\\policy.py', 'PYMODULE'),
   ('email.quoprimime', 'C:\\Python313\\Lib\\email\\quoprimime.py', 'PYMODULE'),
   ('email.utils', 'C:\\Python313\\Lib\\email\\utils.py', 'PYMODULE'),
+  ('et_xmlfile',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\et_xmlfile\\__init__.py',
+   'PYMODULE'),
+  ('et_xmlfile.incremental_tree',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\et_xmlfile\\incremental_tree.py',
+   'PYMODULE'),
+  ('et_xmlfile.xmlfile',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\et_xmlfile\\xmlfile.py',
+   'PYMODULE'),
   ('fileinput', 'C:\\Python313\\Lib\\fileinput.py', 'PYMODULE'),
   ('fnmatch', 'C:\\Python313\\Lib\\fnmatch.py', 'PYMODULE'),
   ('fractions', 'C:\\Python313\\Lib\\fractions.py', 'PYMODULE'),
@@ -1027,6 +1344,710 @@
    'data\\programa.exe\\programa.exe\\Lib\\site-packages\\numpy\\version.py',
    'PYMODULE'),
   ('opcode', 'C:\\Python313\\Lib\\opcode.py', 'PYMODULE'),
+  ('openpyxl',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl._constants',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\_constants.py',
+   'PYMODULE'),
+  ('openpyxl.cell',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\cell\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.cell._writer',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\cell\\_writer.py',
+   'PYMODULE'),
+  ('openpyxl.cell.cell',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\cell\\cell.py',
+   'PYMODULE'),
+  ('openpyxl.cell.read_only',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\cell\\read_only.py',
+   'PYMODULE'),
+  ('openpyxl.cell.rich_text',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\cell\\rich_text.py',
+   'PYMODULE'),
+  ('openpyxl.cell.text',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\cell\\text.py',
+   'PYMODULE'),
+  ('openpyxl.chart',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\chart\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.chart._3d',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\chart\\_3d.py',
+   'PYMODULE'),
+  ('openpyxl.chart._chart',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\chart\\_chart.py',
+   'PYMODULE'),
+  ('openpyxl.chart.area_chart',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\chart\\area_chart.py',
+   'PYMODULE'),
+  ('openpyxl.chart.axis',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\chart\\axis.py',
+   'PYMODULE'),
+  ('openpyxl.chart.bar_chart',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\chart\\bar_chart.py',
+   'PYMODULE'),
+  ('openpyxl.chart.bubble_chart',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\chart\\bubble_chart.py',
+   'PYMODULE'),
+  ('openpyxl.chart.chartspace',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\chart\\chartspace.py',
+   'PYMODULE'),
+  ('openpyxl.chart.data_source',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\chart\\data_source.py',
+   'PYMODULE'),
+  ('openpyxl.chart.descriptors',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\chart\\descriptors.py',
+   'PYMODULE'),
+  ('openpyxl.chart.error_bar',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\chart\\error_bar.py',
+   'PYMODULE'),
+  ('openpyxl.chart.label',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\chart\\label.py',
+   'PYMODULE'),
+  ('openpyxl.chart.layout',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\chart\\layout.py',
+   'PYMODULE'),
+  ('openpyxl.chart.legend',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\chart\\legend.py',
+   'PYMODULE'),
+  ('openpyxl.chart.line_chart',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\chart\\line_chart.py',
+   'PYMODULE'),
+  ('openpyxl.chart.marker',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\chart\\marker.py',
+   'PYMODULE'),
+  ('openpyxl.chart.picture',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\chart\\picture.py',
+   'PYMODULE'),
+  ('openpyxl.chart.pie_chart',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\chart\\pie_chart.py',
+   'PYMODULE'),
+  ('openpyxl.chart.pivot',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\chart\\pivot.py',
+   'PYMODULE'),
+  ('openpyxl.chart.plotarea',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\chart\\plotarea.py',
+   'PYMODULE'),
+  ('openpyxl.chart.print_settings',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\chart\\print_settings.py',
+   'PYMODULE'),
+  ('openpyxl.chart.radar_chart',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\chart\\radar_chart.py',
+   'PYMODULE'),
+  ('openpyxl.chart.reader',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\chart\\reader.py',
+   'PYMODULE'),
+  ('openpyxl.chart.reference',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\chart\\reference.py',
+   'PYMODULE'),
+  ('openpyxl.chart.scatter_chart',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\chart\\scatter_chart.py',
+   'PYMODULE'),
+  ('openpyxl.chart.series',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\chart\\series.py',
+   'PYMODULE'),
+  ('openpyxl.chart.series_factory',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\chart\\series_factory.py',
+   'PYMODULE'),
+  ('openpyxl.chart.shapes',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\chart\\shapes.py',
+   'PYMODULE'),
+  ('openpyxl.chart.stock_chart',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\chart\\stock_chart.py',
+   'PYMODULE'),
+  ('openpyxl.chart.surface_chart',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\chart\\surface_chart.py',
+   'PYMODULE'),
+  ('openpyxl.chart.text',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\chart\\text.py',
+   'PYMODULE'),
+  ('openpyxl.chart.title',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\chart\\title.py',
+   'PYMODULE'),
+  ('openpyxl.chart.trendline',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\chart\\trendline.py',
+   'PYMODULE'),
+  ('openpyxl.chart.updown_bars',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\chart\\updown_bars.py',
+   'PYMODULE'),
+  ('openpyxl.chartsheet',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\chartsheet\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.chartsheet.chartsheet',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\chartsheet\\chartsheet.py',
+   'PYMODULE'),
+  ('openpyxl.chartsheet.custom',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\chartsheet\\custom.py',
+   'PYMODULE'),
+  ('openpyxl.chartsheet.properties',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\chartsheet\\properties.py',
+   'PYMODULE'),
+  ('openpyxl.chartsheet.protection',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\chartsheet\\protection.py',
+   'PYMODULE'),
+  ('openpyxl.chartsheet.publish',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\chartsheet\\publish.py',
+   'PYMODULE'),
+  ('openpyxl.chartsheet.relation',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\chartsheet\\relation.py',
+   'PYMODULE'),
+  ('openpyxl.chartsheet.views',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\chartsheet\\views.py',
+   'PYMODULE'),
+  ('openpyxl.comments',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\comments\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.comments.author',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\comments\\author.py',
+   'PYMODULE'),
+  ('openpyxl.comments.comment_sheet',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\comments\\comment_sheet.py',
+   'PYMODULE'),
+  ('openpyxl.comments.comments',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\comments\\comments.py',
+   'PYMODULE'),
+  ('openpyxl.comments.shape_writer',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\comments\\shape_writer.py',
+   'PYMODULE'),
+  ('openpyxl.compat',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\compat\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.compat.numbers',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\compat\\numbers.py',
+   'PYMODULE'),
+  ('openpyxl.compat.strings',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\compat\\strings.py',
+   'PYMODULE'),
+  ('openpyxl.descriptors',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\descriptors\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.descriptors.base',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\descriptors\\base.py',
+   'PYMODULE'),
+  ('openpyxl.descriptors.container',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\descriptors\\container.py',
+   'PYMODULE'),
+  ('openpyxl.descriptors.excel',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\descriptors\\excel.py',
+   'PYMODULE'),
+  ('openpyxl.descriptors.namespace',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\descriptors\\namespace.py',
+   'PYMODULE'),
+  ('openpyxl.descriptors.nested',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\descriptors\\nested.py',
+   'PYMODULE'),
+  ('openpyxl.descriptors.sequence',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\descriptors\\sequence.py',
+   'PYMODULE'),
+  ('openpyxl.descriptors.serialisable',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\descriptors\\serialisable.py',
+   'PYMODULE'),
+  ('openpyxl.drawing',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\drawing\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.drawing.colors',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\drawing\\colors.py',
+   'PYMODULE'),
+  ('openpyxl.drawing.connector',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\drawing\\connector.py',
+   'PYMODULE'),
+  ('openpyxl.drawing.drawing',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\drawing\\drawing.py',
+   'PYMODULE'),
+  ('openpyxl.drawing.effect',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\drawing\\effect.py',
+   'PYMODULE'),
+  ('openpyxl.drawing.fill',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\drawing\\fill.py',
+   'PYMODULE'),
+  ('openpyxl.drawing.geometry',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\drawing\\geometry.py',
+   'PYMODULE'),
+  ('openpyxl.drawing.graphic',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\drawing\\graphic.py',
+   'PYMODULE'),
+  ('openpyxl.drawing.image',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\drawing\\image.py',
+   'PYMODULE'),
+  ('openpyxl.drawing.line',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\drawing\\line.py',
+   'PYMODULE'),
+  ('openpyxl.drawing.picture',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\drawing\\picture.py',
+   'PYMODULE'),
+  ('openpyxl.drawing.properties',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\drawing\\properties.py',
+   'PYMODULE'),
+  ('openpyxl.drawing.relation',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\drawing\\relation.py',
+   'PYMODULE'),
+  ('openpyxl.drawing.spreadsheet_drawing',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\drawing\\spreadsheet_drawing.py',
+   'PYMODULE'),
+  ('openpyxl.drawing.text',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\drawing\\text.py',
+   'PYMODULE'),
+  ('openpyxl.drawing.xdr',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\drawing\\xdr.py',
+   'PYMODULE'),
+  ('openpyxl.formatting',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\formatting\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.formatting.formatting',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\formatting\\formatting.py',
+   'PYMODULE'),
+  ('openpyxl.formatting.rule',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\formatting\\rule.py',
+   'PYMODULE'),
+  ('openpyxl.formula',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\formula\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.formula.tokenizer',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\formula\\tokenizer.py',
+   'PYMODULE'),
+  ('openpyxl.formula.translate',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\formula\\translate.py',
+   'PYMODULE'),
+  ('openpyxl.packaging',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\packaging\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.packaging.core',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\packaging\\core.py',
+   'PYMODULE'),
+  ('openpyxl.packaging.custom',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\packaging\\custom.py',
+   'PYMODULE'),
+  ('openpyxl.packaging.extended',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\packaging\\extended.py',
+   'PYMODULE'),
+  ('openpyxl.packaging.manifest',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\packaging\\manifest.py',
+   'PYMODULE'),
+  ('openpyxl.packaging.relationship',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\packaging\\relationship.py',
+   'PYMODULE'),
+  ('openpyxl.packaging.workbook',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\packaging\\workbook.py',
+   'PYMODULE'),
+  ('openpyxl.pivot',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\pivot\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.pivot.cache',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\pivot\\cache.py',
+   'PYMODULE'),
+  ('openpyxl.pivot.fields',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\pivot\\fields.py',
+   'PYMODULE'),
+  ('openpyxl.pivot.record',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\pivot\\record.py',
+   'PYMODULE'),
+  ('openpyxl.pivot.table',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\pivot\\table.py',
+   'PYMODULE'),
+  ('openpyxl.reader',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\reader\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.reader.drawings',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\reader\\drawings.py',
+   'PYMODULE'),
+  ('openpyxl.reader.excel',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\reader\\excel.py',
+   'PYMODULE'),
+  ('openpyxl.reader.strings',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\reader\\strings.py',
+   'PYMODULE'),
+  ('openpyxl.reader.workbook',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\reader\\workbook.py',
+   'PYMODULE'),
+  ('openpyxl.styles',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\styles\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.styles.alignment',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\styles\\alignment.py',
+   'PYMODULE'),
+  ('openpyxl.styles.borders',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\styles\\borders.py',
+   'PYMODULE'),
+  ('openpyxl.styles.builtins',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\styles\\builtins.py',
+   'PYMODULE'),
+  ('openpyxl.styles.cell_style',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\styles\\cell_style.py',
+   'PYMODULE'),
+  ('openpyxl.styles.colors',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\styles\\colors.py',
+   'PYMODULE'),
+  ('openpyxl.styles.differential',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\styles\\differential.py',
+   'PYMODULE'),
+  ('openpyxl.styles.fills',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\styles\\fills.py',
+   'PYMODULE'),
+  ('openpyxl.styles.fonts',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\styles\\fonts.py',
+   'PYMODULE'),
+  ('openpyxl.styles.named_styles',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\styles\\named_styles.py',
+   'PYMODULE'),
+  ('openpyxl.styles.numbers',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\styles\\numbers.py',
+   'PYMODULE'),
+  ('openpyxl.styles.protection',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\styles\\protection.py',
+   'PYMODULE'),
+  ('openpyxl.styles.proxy',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\styles\\proxy.py',
+   'PYMODULE'),
+  ('openpyxl.styles.styleable',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\styles\\styleable.py',
+   'PYMODULE'),
+  ('openpyxl.styles.stylesheet',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\styles\\stylesheet.py',
+   'PYMODULE'),
+  ('openpyxl.styles.table',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\styles\\table.py',
+   'PYMODULE'),
+  ('openpyxl.utils',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\utils\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.utils.bound_dictionary',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\utils\\bound_dictionary.py',
+   'PYMODULE'),
+  ('openpyxl.utils.cell',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\utils\\cell.py',
+   'PYMODULE'),
+  ('openpyxl.utils.datetime',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\utils\\datetime.py',
+   'PYMODULE'),
+  ('openpyxl.utils.escape',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\utils\\escape.py',
+   'PYMODULE'),
+  ('openpyxl.utils.exceptions',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\utils\\exceptions.py',
+   'PYMODULE'),
+  ('openpyxl.utils.formulas',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\utils\\formulas.py',
+   'PYMODULE'),
+  ('openpyxl.utils.indexed_list',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\utils\\indexed_list.py',
+   'PYMODULE'),
+  ('openpyxl.utils.protection',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\utils\\protection.py',
+   'PYMODULE'),
+  ('openpyxl.utils.units',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\utils\\units.py',
+   'PYMODULE'),
+  ('openpyxl.workbook',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\workbook\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.workbook._writer',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\workbook\\_writer.py',
+   'PYMODULE'),
+  ('openpyxl.workbook.child',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\workbook\\child.py',
+   'PYMODULE'),
+  ('openpyxl.workbook.defined_name',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\workbook\\defined_name.py',
+   'PYMODULE'),
+  ('openpyxl.workbook.external_link',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\workbook\\external_link\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.workbook.external_link.external',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\workbook\\external_link\\external.py',
+   'PYMODULE'),
+  ('openpyxl.workbook.external_reference',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\workbook\\external_reference.py',
+   'PYMODULE'),
+  ('openpyxl.workbook.function_group',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\workbook\\function_group.py',
+   'PYMODULE'),
+  ('openpyxl.workbook.properties',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\workbook\\properties.py',
+   'PYMODULE'),
+  ('openpyxl.workbook.protection',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\workbook\\protection.py',
+   'PYMODULE'),
+  ('openpyxl.workbook.smart_tags',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\workbook\\smart_tags.py',
+   'PYMODULE'),
+  ('openpyxl.workbook.views',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\workbook\\views.py',
+   'PYMODULE'),
+  ('openpyxl.workbook.web',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\workbook\\web.py',
+   'PYMODULE'),
+  ('openpyxl.workbook.workbook',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\workbook\\workbook.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\worksheet\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet._read_only',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\worksheet\\_read_only.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet._reader',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\worksheet\\_reader.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet._write_only',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\worksheet\\_write_only.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet._writer',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\worksheet\\_writer.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.cell_range',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\worksheet\\cell_range.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.copier',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\worksheet\\copier.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.datavalidation',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\worksheet\\datavalidation.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.dimensions',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\worksheet\\dimensions.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.drawing',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\worksheet\\drawing.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.filters',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\worksheet\\filters.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.formula',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\worksheet\\formula.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.header_footer',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\worksheet\\header_footer.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.hyperlink',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\worksheet\\hyperlink.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.merge',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\worksheet\\merge.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.page',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\worksheet\\page.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.pagebreak',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\worksheet\\pagebreak.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.print_settings',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\worksheet\\print_settings.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.properties',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\worksheet\\properties.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.protection',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\worksheet\\protection.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.related',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\worksheet\\related.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.scenario',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\worksheet\\scenario.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.table',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\worksheet\\table.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.views',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\worksheet\\views.py',
+   'PYMODULE'),
+  ('openpyxl.worksheet.worksheet',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\worksheet\\worksheet.py',
+   'PYMODULE'),
+  ('openpyxl.writer',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\writer\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.writer.excel',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\writer\\excel.py',
+   'PYMODULE'),
+  ('openpyxl.writer.theme',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\writer\\theme.py',
+   'PYMODULE'),
+  ('openpyxl.xml',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\xml\\__init__.py',
+   'PYMODULE'),
+  ('openpyxl.xml.constants',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\xml\\constants.py',
+   'PYMODULE'),
+  ('openpyxl.xml.functions',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\openpyxl\\xml\\functions.py',
+   'PYMODULE'),
   ('packaging',
    'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
    'data\\programa.exe\\programa.exe\\Lib\\site-packages\\packaging\\__init__.py',
@@ -2939,6 +3960,46 @@
   ('urllib.response', 'C:\\Python313\\Lib\\urllib\\response.py', 'PYMODULE'),
   ('uuid', 'C:\\Python313\\Lib\\uuid.py', 'PYMODULE'),
   ('webbrowser', 'C:\\Python313\\Lib\\webbrowser.py', 'PYMODULE'),
+  ('xlrd',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\xlrd\\__init__.py',
+   'PYMODULE'),
+  ('xlrd.biffh',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\xlrd\\biffh.py',
+   'PYMODULE'),
+  ('xlrd.book',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\xlrd\\book.py',
+   'PYMODULE'),
+  ('xlrd.compdoc',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\xlrd\\compdoc.py',
+   'PYMODULE'),
+  ('xlrd.formatting',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\xlrd\\formatting.py',
+   'PYMODULE'),
+  ('xlrd.formula',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\xlrd\\formula.py',
+   'PYMODULE'),
+  ('xlrd.info',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\xlrd\\info.py',
+   'PYMODULE'),
+  ('xlrd.sheet',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\xlrd\\sheet.py',
+   'PYMODULE'),
+  ('xlrd.timemachine',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\xlrd\\timemachine.py',
+   'PYMODULE'),
+  ('xlrd.xldate',
+   'E:\\GitHubRepositories\\renob-pythonSide\\Raw '
+   'data\\programa.exe\\programa.exe\\Lib\\site-packages\\xlrd\\xldate.py',
+   'PYMODULE'),
   ('xml', 'C:\\Python313\\Lib\\xml\\__init__.py', 'PYMODULE'),
   ('xml.dom', 'C:\\Python313\\Lib\\xml\\dom\\__init__.py', 'PYMODULE'),
   ('xml.dom.NodeFilter',

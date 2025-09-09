@@ -1,0 +1,132 @@
+INSTRUÇÕES DE USO — ATUALIZADOR SISVAN
+
+====================================
+1) O QUE O PROGRAMA FAZ
+====================================
+Atualiza a base mestre do SISVAN a partir de um ou mais arquivos CSV. Ele valida os cabeçalhos, faz backup do arquivo mestre atual e mescla dados novos/atualizados na base.
+
+- Linhas novas (chave ainda não existente) → INSERIDAS
+- Linhas existentes (mesma chave) → MÉTRICAS NUMÉRICAS ATUALIZADAS (quando houver valor válido no CSV)
+- Linhas faltantes no CSV → NÃO são removidas da base
+
+
+====================================
+2) PREPARO DO CSV
+====================================
+• Formato: CSV (separador vírgula “,”), com linha de cabeçalho obrigatória.
+• Codificação: UTF-8 (recomendado).
+• Tipos:
+  - Colunas numéricas devem ter apenas números (use ponto “.” como separador decimal).
+  - Colunas textuais devem manter a grafia consistente com a base.
+
+COLUNAS OBRIGATÓRIAS (nomes exatos):
+  UF, codigo_municipio, municipio,
+  baixo_peso, eutrofico, sobrepeso,
+  obesidade_G_1, obesidade_G_2, obesidade_G_3,
+  magreza_acentuada, magreza, obesidade, obesidade_grave, total,
+  SEXO, ANO, fase_vida
+
+REGRAS E CONVENÇÕES RECOMENDADAS:
+  - UF: 2 letras maiúsculas (ex.: MG)
+  - codigo_municipio: 7 dígitos do IBGE (ex.: 3170206), sem máscara
+  - ANO: inteiro (ex.: 2025)
+  - SEXO: utilize os mesmos códigos da base (ex.: masc, fem)
+  - fase_vida: texto livre, mas mantenha exatamente o mesmo padrão usado na base mestre (adulto, adolescente)
+  - Métricas (baixo_peso, eutrofico, etc.): números inteiros/decimais. Células vazias NÃO substituem valores existentes.
+
+
+====================================
+3) CHAVE DE CORRESPONDÊNCIA (MATCHING)
+====================================
+A combinação de todas as colunas de texto da base + ANO + codigo_municipio define a CHAVE.
+• Se a chave do CSV já existir na base → atualiza as COLUNAS NUMÉRICAS (quando o novo valor é válido).
+• Se a chave ainda não existir → insere a linha completa.
+• Duplicatas DENTRO do próprio CSV: a última ocorrência prevalece.
+
+
+====================================
+4) COMO USAR O PROGRAMA (PASSO A PASSO)
+====================================
+1. Abra “Update.exe”.
+2. Clique em “Browser” e selecione um ou mais arquivos CSV válidos.
+3. Clique em “Iniciar” para executar a atualização.
+4. Acompanhe o andamento na barra de progresso e no painel “Detalhes”.
+5. Ao concluir, verifique:
+   - Data/db_sisvan.csv → base mestre atualizada
+   - Backup/ → backup do arquivo mestre com timestamp
+   - Backup/merge_history.csv → log de auditoria (arquivos, linhas novas/atualizadas, total)
+
+
+====================================
+5) BACKUP E LOG
+====================================
+• Antes de mesclar, o programa cria um backup de “Data/db_sisvan.csv” em “Backup/” com timestamp (ex.: db_sisvan_YYYYMMDDThhmmss.csv).
+• “Backup/merge_history.csv” registra:
+  - Data/hora da execução
+  - Arquivos CSV processados
+  - Linhas novas e linhas atualizadas
+  - Tamanho final da base
+
+
+====================================
+6) EXEMPLO DE CABEÇALHO E LINHA
+====================================
+Cabeçalho:
+UF,codigo_municipio,municipio,baixo_peso,eutrofico,sobrepeso,obesidade_G_1,obesidade_G_2,obesidade_G_3,magreza_acentuada,magreza,obesidade,obesidade_grave,total,SEXO,ANO,fase_vida
+
+Linha de exemplo:
+MG,3170206,Viçosa,12,345,67,23,4,1,3,10,28,2,495,M,2024,Adolescente
+
+
+====================================
+7) ERROS COMUNS E COMO RESOLVER
+====================================
+• “Coluna X não encontrada” → Corrija o cabeçalho para usar o nome exato.
+• “Tipo inválido” → Limpe a coluna e mantenha somente números nas métricas.
+• “Arquivo em uso” → Feche o CSV no Excel/Sheets e tente novamente.
+• “Caracteres estranhos” → Salve o arquivo em UTF-8.
+• “Não atualizou” → Confira se a chave do CSV bate com a da base; veja o “merge_history.csv”.
+
+
+====================================
+8) RESTAURANDO UM BACKUP
+====================================
+1. Abra o programa.
+2. Clique no botão "Restaurar".
+3. A base mestra será atualizada para o último backup feito.
+CASO NÃO FUNCIONE OU QUEIRA OUTRA VERSÃO:
+1. Feche o programa.
+2. Copie o arquivo desejado de “Backup/db_sisvan_YYYYMMDDThhmmss.csv”.
+3. Substitua “Data/db_sisvan.csv” pelo backup.
+4. Abra o programa e verifique a base.
+
+
+====================================
+9) CONFIGURAÇÕES (config.json)
+====================================
+Exemplo:
+{
+  "data_dir": "Data",
+  "sisvan_path": "db_sisvan.csv",
+  "backup_dir": "Backup",
+  "log_path": "merge_history.csv",
+  "date_format": "%d%m%YT%H%M%S",
+  "max_rows_in_memory": 1000000,
+  "colunasSisvan": [
+    "UF","codigo_municipio","municipio","baixo_peso",
+    "eutrofico","sobrepeso","obesidade_G_1","obesidade_G_2",
+    "obesidade_G_3","magreza_acentuada","magreza","obesidade",
+    "obesidade_grave","total","SEXO","ANO","fase_vida"
+  ]
+}
+
+• Altere somente se souber o que está fazendo.
+
+
+====================================
+10) BOAS PRÁTICAS
+====================================
+• Normalize valores antes de importar (ex.: “MG”, códigos IBGE sem máscara).
+• Evite colunas extras ou nomes diferentes do padrão.
+• Faça importações incrementais (por ano, por fase de vida, etc.) para facilitar auditorias.
+• Guarde os backups até validar os relatórios/resultados.
